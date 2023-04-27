@@ -1,0 +1,50 @@
+@import "reset";
+
+:root {
+  --mobile-bp: 375px;
+  --desktop-bp: 1440px;
+
+  --primary-lr: hsl(0, 100%, 67%);
+  --primary-oy: hsl(39, 100%, 56%);
+  --primary-gt: hsl(166, 100%, 37%);
+  --primary-cb: hsl(234, 85%, 45%);
+
+  --gradients-lsb-bg: hsl(252, 100%, 67%);
+  --gradients-lrb-bg: hsl(241, 81%, 54%);
+  --gradients-vb-circle: hsla(256, 72%, 46%, 1);
+  --gradients-pb-circle: hsla(241, 72%, 46%, 0);
+
+  --neutral-w: hsl(0, 0%, 100%);
+  --neutral-pb: hsl(221, 100%, 96%);
+  --neutral-ll: hsl(241, 100%, 89%);
+  --neutral-dgb: hsl(224, 30%, 27%);
+
+  --text-primary: Hanken Grotesk;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  place-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-column: 1;
+  grid-row: 1;
+  height: 66.7rem;
+  width: 37.5rem;
+  @media (min-width: 667px) {
+    height: 40rem;
+    width: 66.7rem;
+  }
+}

@@ -1,0 +1,20 @@
+ul.root {
+  & > li {
+    &:nth-of-type(1) {
+      background-color: hsl(6, 100%, 98%);
+      color: var(--primary-lr);
+    }
+    &:nth-of-type(2) {
+      background-color: hsl(42, 100%, 97%);
+      color: var(--primary-oy);
+    }
+    &:nth-of-type(3) {
+      background-color: hsl(173, 53%, 97%);
+      color: var(--primary-gt);
+    }
+    &:nth-of-type(4) {
+      background-color: hsl(240, 71%, 97%);
+      color: var(--primary-cb);
+    }
+  }
+}
