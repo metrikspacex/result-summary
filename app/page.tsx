@@ -2,7 +2,7 @@ import Summary from "@/components/Summary";
 import type { Results } from "@/types/results";
 
 export default async function Page() {
-  const req = await fetch("http://0.0.0.0:3000/api");
+  const req = await fetch("https://metrikspacex.github.io/result-summary/api");
   const data: Results = await req.json();
   return (
     <main>
